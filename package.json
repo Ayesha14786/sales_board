@@ -1,0 +1,15 @@
+{
+  "name": "sales_board",
+  "version": "1.0.0",
+  "description": "An app to visualise business process mining",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd dashboard && yarn dev",
+    "build": "cd dashboard && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

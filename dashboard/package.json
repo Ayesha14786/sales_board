@@ -1,0 +1,46 @@
+{
+  "name": "dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "init-tailwind": "tailwindcss init -p",
+    "build": "vite build --base=/assets/sales_board/dashboard/ && yarn copy-html-entry",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "copy-html-entry": "cp ../sales_board/public/dashboard/index.html ../sales_board/www/dashboard.html"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "d3": "^7.8.5",
+    "elkjs": "^0.8.2",
+    "frappe-charts": "^1.6.2",
+    "frappe-react-sdk": "^1.3.8",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.23.0",
+    "react-dom": "^18.2.0",
+    "react-flow-renderer": "^10.3.17",
+    "react-hook-form": "^7.48.2",
+    "react-router-dom": "^6.20.0",
+    "reactflow": "^11.10.1",
+    "socket.io-client": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}
